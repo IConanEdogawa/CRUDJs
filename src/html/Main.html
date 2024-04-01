@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="/src/css/styles.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="form-container">
+        <h2>User Details</h2>
+        <input type="text" id="name" placeholder="Name">
+        <input type="email" id="email" placeholder="Email">
+        <input type="password" id="password" placeholder="Password">
+        <textarea id="bio" placeholder="Bio" style="resize: vertical; max-height: 200px;"></textarea>
+        <input type="file" id="photo" accept="image/*">
+        <button onclick="submitForm()">Submit</button>
+        <button onclick="updateProfile()">Update</button>
+        <button onclick="removeProfile()">Remove</button>
+    </div>
+    <div class="display-container">
+        <h2>User Profile</h2>
+        <div id="profile"></div>
+    </div>
+</div>
+
+<script src="/src/js/script.js"></script>
+</body>
+</html>
